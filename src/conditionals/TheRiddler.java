@@ -3,6 +3,8 @@
 
 package conditionals;
 
+import javax.swing.JOptionPane;
+
 public class TheRiddler {
 
 	public static void main(String[] args) {
@@ -18,7 +20,17 @@ public class TheRiddler {
 		// 6. Add some more riddles
 
 		// 2. Make a pop up to show the score.
-		
+		int x = 0;
+		String y = JOptionPane.showInputDialog("Why didn't the skeleton cross the road?");
+		if (y.equals("He didn't have the guts to!")) {
+			JOptionPane.showMessageDialog(null, "Correct!");
+			x++;
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Wrong....");	
 	}
-}
+		JOptionPane.showMessageDialog(null, "Your score is " + x);
+		}
+	}
+
 
